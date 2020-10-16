@@ -9,6 +9,14 @@ import ClearData from './components/ClearData';
 import RenderPostData from './components/RenderPostData';
 import RenderTitleData from './components/RenderTitleData';
 import Home from './components/Home';
+import News from './components/News';
+import Posts from './components/Posts';
+import NewsPosts from './components/NewsPosts';
+//contexts
+import NewsContextProvider from './contexts/NewsContext';
+import PostsContextProvider from './contexts/PostContext';
+
+
 
 
 const App = () =>{
@@ -22,6 +30,15 @@ const App = () =>{
             Redux store. After that it fetches data from redux store and 
             renders it to the DOM.
           </h3>
+
+          <NewsContextProvider>
+            <PostsContextProvider>
+              <News />
+              <Posts />
+              <NewsPosts />
+            </PostsContextProvider>
+          </NewsContextProvider>
+
           <NavBar />
           <Route exact path="/" component={Home} />
           <Switch>
