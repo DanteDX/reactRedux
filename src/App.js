@@ -12,6 +12,7 @@ import Home from './components/Home';
 import News from './components/News';
 import Posts from './components/Posts';
 import NewsPosts from './components/NewsPosts';
+import Form from './components/Form';
 //contexts
 import NewsContextProvider from './contexts/NewsContext';
 import PostsContextProvider from './contexts/PostContext';
@@ -47,6 +48,7 @@ const App = () =>{
             <Route exact path="/cleardata" component={ClearData} />
             <Route exact path="/renderPostData" component={RenderPostData} />
             <Route exact path="/renderTitleData" component={RenderTitleData} />
+            <Route exact path="/form" component={Form} />
           </Switch>
         </div>
       </BrowserRouter>
