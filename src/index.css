@@ -1,0 +1,38 @@
+body{
+    margin:0px;
+    padding:0px;
+}
+.mainHeading{
+    text-align: center;
+    text-decoration: underline;
+    margin:0px;
+}
+
+.navbarul{
+    list-style-type:none;
+    display:flex;
+    justify-content: space-between;
+    background-color: lavender;
+    margin:0px;
+}
+
+.navbarul li button{
+    padding:7px; 
+    background-color: lavender;
+    border:1px solid lavender;  
+    font-size: 13px; 
+}
+
+.navbarul li button:hover{
+    padding:7px; 
+    background-color: #c4c4e2;
+    border:1px solid #c4c4e2; 
+    font-size: 13px; 
+}
+
+li.home button{
+    color:green;
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: #bcbcc9;
+}
