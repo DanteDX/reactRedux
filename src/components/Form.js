@@ -1,8 +1,16 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 
 const Form = () => {
+    useEffect(()=>{
+        console.log('useEffect hook ran on mount');
+    },[]);
     
     const [songs,setSongs] = useState([]);
+    useEffect(()=>{
+        console.log('Songs been updated');
+    },[songs]);
+
+    
     const handleDelete = (songName) =>{
         setSongs(songs.filter(sg => sg.songName !== songName));
     }
