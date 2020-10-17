@@ -16,6 +16,8 @@ import Form from './components/Form';
 //contexts
 import NewsContextProvider from './contexts/NewsContext';
 import PostsContextProvider from './contexts/PostContext';
+import TestContextProvider from './contexts/TestContext';
+import TestContextConsumer from './components/TestContextConsumer';
 
 
 
@@ -34,9 +36,12 @@ const App = () =>{
 
           <NewsContextProvider>
             <PostsContextProvider>
-              <News />
-              <Posts />
-              <NewsPosts />
+             <TestContextProvider>
+                <News />
+                <Posts />
+                <NewsPosts />
+                <TestContextConsumer />
+             </TestContextProvider>
             </PostsContextProvider>
           </NewsContextProvider>
 

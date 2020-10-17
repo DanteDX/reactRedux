@@ -16,6 +16,7 @@ class NavBar extends Component{
                     <li><NavLink to="/rendertitledata"><button>Render Title Data</button></NavLink></li>
                     <li><NavLink to="/cleardata"><button>Clear Redux State</button></NavLink></li>
                     <li><NavLink to="/form"><button>Form</button></NavLink></li>
+                    <li><NavLink to="/testContext"><button>Test Context</button></NavLink></li>
                 </ul>
             </nav>
         )
